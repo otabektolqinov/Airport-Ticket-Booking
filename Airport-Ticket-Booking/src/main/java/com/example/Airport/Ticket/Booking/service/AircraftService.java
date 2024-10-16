@@ -10,10 +10,10 @@ import java.util.List;
 @Service
 public interface AircraftService {
 
-    ApiResponse<Aircraft> createAircraft(AircraftDto aircraftDto);
+    ApiResponse<AircraftDto> createAircraft(AircraftDto aircraftDto);
     ApiResponse<AircraftDto> getAircraftById(Long id);
     ApiResponse<AircraftDto> updateAircraftById(Long id, AircraftDto dto);
     ApiResponse<AircraftDto> deleteAircraftById(Long id);
-    ApiResponse<List<AircraftDto>> getAllAircrafts();
+    ApiResponse<List<AircraftDto>> getAllAircraft();
 
 }
